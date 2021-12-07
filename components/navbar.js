@@ -7,7 +7,16 @@ import Link from 'next/link'
 export default function Navbar({ children }) {
     return (
         <div className={styles.container}>
-            navbar here
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse navbarContents" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link" href="/projects">Projecets</a>
+                    </div>
+                    </div>
+                </div>
+            </nav>
         </div>
     )
 }

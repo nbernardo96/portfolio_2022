@@ -1,6 +1,12 @@
 .container {
     background: #B0D1C6;
-    max-width: 60rem;
     padding: 0 1rem;
-    margin: 3rem auto 6rem;
+    margin: 0 auto 6rem;
+    width: auto;
+
+    box-shadow: 0px 10px 30px #4a6056
+}
+
+.navbarContents {
+    justify-content: center;
 }

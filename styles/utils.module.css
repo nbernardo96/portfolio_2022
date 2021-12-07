@@ -52,3 +52,7 @@
   .lightText {
     color: #666;
   }
+
+  .jobTitle {
+      margin: 0 auto 1.5rem;
+  }
