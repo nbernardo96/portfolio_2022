@@ -5,7 +5,7 @@ body {
   font-family: 'Barlow Condensed', sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  background: #5A8A7B;
+  background: #689592;
   color: white;
 }
 
@@ -26,4 +26,24 @@ img {
   height: 250px;
   width: 250px;
   display: block;
+}
+
+/* navbar styling */
+#navbarAltBrand {
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 0 1rem 0 1rem;
+}
+
+#navbarNavAltMarkup {
+    justify-content: flex-end;
+}
+
+#navbarNavAltMarkup a {
+    font-size: 18px;
+    padding: 0 1rem 0 1rem;
+}
+
+#navbarNavAltMarkup .currentPage {
+    color: white;
 }

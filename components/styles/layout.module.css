@@ -1,15 +1,45 @@
-.container {
-    max-width: 100rem;
-    padding: 0 1rem;
-    margin: 1rem auto 6rem;
-}
-
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.backToHome {
+.container {
+    max-width: 100vw;
+}
+
+/* .backToHome {
     margin: 3rem 0 0;
+} */
+
+.navbarContainer {
+    padding: 1.5rem;
+}
+
+.sectionContainer {
+    height: 15rem;
+}
+
+.introContainer {
+    background: #80BBB7;
+}
+
+.skillsContainer {
+    background: inherit;
+}
+
+.workContainer {
+    background: linear-gradient(315deg, #968DAF 60%, #E7FCFF 60%);
+    /* see if you can set it to 15rem but if height will adjust dynamically  */
+    height: 30rem;
+}
+
+.projectContainer {
+    background: linear-gradient(245deg, #4F716F 60%, #689592 60%);
+    /* see if you can set it to 15rem but if height will adjust dynamically  */
+    height: 30rem;
+}
+
+.connectContainer {
+    background: #80BBB7;
 }

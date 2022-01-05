@@ -7,7 +7,7 @@ import Link from 'next/link'
 import Navbar from './navbar'
 
 const name = 'Nicole Bernardo'
-export const siteTitle = 'Portfolio Website'
+export const siteTitle = 'Nicole Bernardo'
 
 export default function Layout({ children, home }) {
   return (
@@ -43,23 +43,6 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={300}
-                  width={300}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
           </>
         )}
       </header>

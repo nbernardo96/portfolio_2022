@@ -1,0 +1,21 @@
+.projectHeader {
+    margin: 0 0 0 2.3%;
+}
+
+.cardRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectCard {
+    background: #B0D1C6;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px #4a6056;
+    margin: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    .cardRow {
+        display: block;
+    }
+}
