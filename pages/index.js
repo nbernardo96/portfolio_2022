@@ -19,21 +19,6 @@ export default function Home() {
                     SKILLS
                 </div>
             </div>
-            {/* <div class="row">
-                <div className={`${layoutStyles.sectionContainer} ${layoutStyles.workContainer} col`}>
-                    WORK
-                </div>
-            </div>
-            <div class="row">
-                <div className={`${layoutStyles.sectionContainer} ${layoutStyles.projectContainer} col`}>
-                    PROJECTS
-                </div>
-            </div>
-            <div class="row">
-                <div className={`${layoutStyles.sectionContainer} ${layoutStyles.connectContainer} col`}>
-                    LET'S STAY CONNECTED
-                </div>
-            </div> */}
         </div>
     </Layout>
   )
