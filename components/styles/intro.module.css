@@ -1,3 +1,38 @@
 .container {
-    background: lavender;
+    background: #80BBB7;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.imageContainer {
+    padding: 2rem;
+}
+
+.textContainer {
+    font-size: 28px;
+    text-align: center;
+    align-self: center;
+    width: 60%;
+    padding: 0 2rem 0 2rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .textContainer {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .textContainer {
+        padding: 1rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .textContainer {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+}
+
