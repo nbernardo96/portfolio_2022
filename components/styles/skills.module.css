@@ -1,0 +1,132 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skillsHeaderContainer {
+    text-align: end;
+    width: 40%;
+    padding: 2rem 4rem 0 0;
+}
+
+.skillsListContainer {
+    text-align: center;
+    width: 60%;
+    padding: 3rem 0 0 3rem;
+}
+
+.skillsListContainer ul {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-auto-flow: column;
+}
+
+.skillsListContainer li {
+    display: inline-block;
+    font-size: 3rem;
+    text-align: start;
+}
+
+.skillsTitle {
+    font-size: 7rem;
+    font-weight: bolder;
+}
+
+.skillsDescription {
+    font-size: 2rem;
+}
+
+.arrowIcon {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgb(185, 255, 255);
+}
+
+@media (max-width: 1200px) {
+    .skillsHeaderContainer {
+        padding: 2rem 2rem 2rem 0;
+        width: 30%;
+    }
+
+    .skillsListContainer {
+        padding: 3rem 0 2rem 0;
+        width: 70%;
+    }
+
+    .skillsTitle {
+        font-size: 5rem;
+    }
+    
+    .skillsDescription {
+        font-size: 1.5rem;
+    }
+
+    .skillsListContainer ul {
+        grid-template-rows: repeat(3, min-content);
+        margin: 0;
+    }
+
+    .skillsListContainer li {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .skillsHeaderContainer {
+        width: 40%;
+    }
+
+    .skillsListContainer {
+        width: 60%;
+    }
+
+    .skillsListContainer ul {
+        grid-template-rows: repeat(3, min-content);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse;
+        padding: 1rem;
+        align-items: center;
+    }
+    
+    .skillsHeaderContainer {
+        text-align: start;
+        width: 100%;
+        padding: 0 0 1rem 2rem;
+    }
+    
+    .skillsListContainer {
+        width: 100%;
+        padding: 0;
+    }
+
+    .skillsListContainer li {
+        font-size: 2rem;
+    }
+
+    .arrowIcon {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .skillsListContainer ul {
+        grid-template-rows: repeat(4, min-content);
+    }
+
+    .skillsListContainer li {
+        display: block;
+        padding: 0;
+        text-align: start;
+    }
+}
+
+@media only screen and (max-width: 383px) {
+    .skillsListContainer ul {
+        grid-template-rows: repeat(8, min-content);
+    }
+}

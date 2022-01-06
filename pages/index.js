@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import Intro from '../components/intro'
+import Skills from '../components/skills'
 
 export default function Home() {
   return (
@@ -9,14 +10,14 @@ export default function Home() {
             <title>{siteTitle}</title>
         </Head>
         <div>
-            <div class="row">
+            <div class="row g-0">
                 <div class="col">
                     <Intro />
                 </div>
             </div>
-            <div class="row">
+            <div class="row g-0">
                 <div class="col">
-                    SKILLS
+                    <Skills />
                 </div>
             </div>
         </div>
