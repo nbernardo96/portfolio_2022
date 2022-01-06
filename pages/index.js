@@ -10,12 +10,12 @@ export default function Home() {
             <title>{siteTitle}</title>
         </Head>
         <div>
-            <div class="row">
+            <div class="row g-0">
                 <div class="col">
                     <Intro />
                 </div>
             </div>
-            <div class="row">
+            <div class="row g-0">
                 <div class="col">
                     <Skills />
                 </div>
