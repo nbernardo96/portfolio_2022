@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import Intro from '../components/intro'
-import utilStyles from '../styles/utils.module.css'
-import layoutStyles from '../components/styles/layout.module.css'
 
 export default function Home() {
   return (
@@ -10,18 +8,18 @@ export default function Home() {
         <Head>
             <title>{siteTitle}</title>
         </Head>
-        <div class="container-fluid">
+        <div>
             <div class="row">
-                <div className={`${layoutStyles.sectionContainer} ${layoutStyles.introContainer} col`}>
+                <div class="col">
                     <Intro />
                 </div>
             </div>
             <div class="row">
-                <div className={`${layoutStyles.sectionContainer} ${layoutStyles.skillsContainer} col`}>
+                <div class="col">
                     SKILLS
                 </div>
             </div>
-            <div class="row">
+            {/* <div class="row">
                 <div className={`${layoutStyles.sectionContainer} ${layoutStyles.workContainer} col`}>
                     WORK
                 </div>
@@ -35,7 +33,7 @@ export default function Home() {
                 <div className={`${layoutStyles.sectionContainer} ${layoutStyles.connectContainer} col`}>
                     LET'S STAY CONNECTED
                 </div>
-            </div>
+            </div> */}
         </div>
     </Layout>
   )

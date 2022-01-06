@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from './styles/layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 import Navbar from './navbar'
@@ -28,24 +26,6 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Navbar />
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={300}
-              width={300}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-          </>
-        )}
-      </header>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
