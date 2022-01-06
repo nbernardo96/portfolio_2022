@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import Intro from '../components/intro'
+import Skills from '../components/skills'
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
             </div>
             <div class="row">
                 <div class="col">
-                    SKILLS
+                    <Skills />
                 </div>
             </div>
         </div>

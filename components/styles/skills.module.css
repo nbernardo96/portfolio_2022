@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skillsHeaderContainer {
+    text-align: end;
+    width: 30%;
+    padding: 3rem 5rem 0 0;
+}
+
+.skillsListContainer {
+    width: 70%;
+    text-align: center;
+    padding: 4rem 4rem 4rem 0;
+}
+
+.skillsListContainer li {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.skillsTitle {
+    font-size: 7rem;
+    font-weight: bolder;
+}
+
+.skillsDescription {
+    font-size: 2rem;
+}
+
+.arrowIcon {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgb(185, 255, 255);
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+    .skillsHeaderContainer {
+        text-align: center;
+        width: 100%;
+    }
+
+    .skillsListContainer {
+        width: 100%;
+    }
+}
