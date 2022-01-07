@@ -1,0 +1,152 @@
+.container {
+    background: linear-gradient(231deg, #968DAF 60%, #e7fcffd7 60%);
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    min-height: 38rem;
+}
+
+.workHeaderContainer {
+    width: 30%;
+    padding: 12rem 4rem 4rem 4rem;
+    text-align: center;
+}
+
+.workHeaderContainer h1 {
+    color: #968DAF;
+    font-size: 7rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.workDetailsContainer {
+    width: 70%;
+    padding: 4rem 2rem 4rem 7rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.workTitlesContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 4rem 0;
+    height: 75%;
+    overflow: auto;
+
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.workTitlesContainer::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.workTitlesContainer button {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    border-left: 5px solid #e7fcffd7;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #e7fcffd7;
+}
+
+.workDescriptionContainer {
+    width: 50%;
+}
+
+.workDescriptionContainer h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #e7fcffd7;
+    margin-left: 28px;
+}
+
+.workDescriptionContainer h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e7fcffd7;
+    padding: 0 0 1rem 0;
+    margin-left: 28px;
+}
+
+.workDescriptionContainer p {
+    opacity: 80%;
+    color: #e7fcffd7;
+    margin: 0 0 0 10px;
+    font-weight: bolder;
+}
+
+.jobExperienceContainer {
+    display: flex;
+}
+
+.arrowIcon {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: rgb(185, 255, 255);
+}
+
+@media only screen and (max-width: 992px) {
+    .workHeaderContainer {
+        padding: 12rem 2rem 2rem 2rem;
+    }
+
+    .workDetailsContainer {
+        padding: 2rem 2rem 4rem 3rem;
+        justify-content: space-between;
+    }
+
+    .workHeaderContainer h1 {
+        font-size: 6rem;
+    }
+
+    .workTitlesContainer {
+        height: 50%;
+    }
+
+    .workTitlesContainer button {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        background: #968DAF;
+        display: block;
+    }
+
+    .workHeaderContainer {
+        background: #e7fcffd7;
+        width: 100%;
+        padding: 0;
+    }
+
+    .workDetailsContainer {
+        display: block;
+        background: #968DAF;
+        width: 100%;
+        padding: 0;
+        margin: 1rem 0 0 0;
+    }
+
+    .workTitlesContainer {
+        text-align: center;
+        overflow-x: scroll;
+    }
+
+    .workDescriptionContainer {
+        text-align: center;
+    }
+
+    .workTitlesContainer {
+        padding: 0;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .workTitlesContainer button {
+        border-left: none;
+        border-top: 5px solid #e7fcffd7;
+        padding: 1rem 0 1rem 0;
+        min-width: 250px;
+    }
+}

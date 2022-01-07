@@ -1,17 +1,14 @@
-import Image from 'next/image'
-import { name } from '../components/layout'
 import styles from './styles/skills.module.css'
 import utilStyles from '../styles/utils.module.css'
 
 export default function Skills() {
     const skills = ['Javascript', 'Django', 'MySQL', 'Node.js', 'React', 'Python', 'Figma', 'Vue']
-
     return (
         <div className={styles.container}>
             <div className={styles.skillsListContainer}>
                 <ul>
                     {skills.map((skill) => (
-                        <li>
+                        <li key={skill}>
                             <span className={`${styles.arrowIcon} material-icons`}>keyboard_double_arrow_right</span>
                             {skill}
                         </li>
