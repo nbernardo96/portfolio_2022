@@ -1,25 +1,15 @@
-  .borderCircle {
+.borderCircle {
     border-radius: 9999px;
-  }
-  
-  .colorInherit {
-    color: inherit;
-  }
+}
 
-  .lightText {
+.colorInherit {
+    color: inherit;
+}
+
+.lightText {
     opacity: 60%;
-  }
-  
-  .padding1px {
-    padding-top: 1px;
-  }
-  
-  .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .listItem {
-    margin: 0 0 1.25rem;
-  }
+}
+
+.noBulletPoints {
+    list-style-type: none;
+}

@@ -15,7 +15,7 @@ export default function Intro() {
                 width={400}
                 alt={name}
                 priority
-                responsive
+                responsive="true"
                 />
             </div>
             <div className={styles.textContainer}>
