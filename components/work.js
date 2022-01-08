@@ -32,6 +32,7 @@ export default function Work() {
     const [jobTitle, setJobTitle] = useState(jobExperience[0].title);
     const [jobDate, setJobDate] = useState(jobExperience[0].date);
     const [jobDesc, setJobDesc] = useState(jobExperience[0].description);
+    const [activeCompany, setActiveCompany] = useState(jobExperience[0].company);
 
     function displayWorkDetails(job) {
         let temp = [];
@@ -43,6 +44,7 @@ export default function Work() {
         }
 
         setJobDesc(temp);
+        setActiveCompany(job.company)
     }
 
     return (
@@ -53,7 +55,9 @@ export default function Work() {
             <div className={styles.workDetailsContainer}>
                 <div className={`${utilStyles.noBulletPoints} ${styles.workTitlesContainer}`}>
                     {jobExperience.map((job) => (
-                        <button key={job.company} onClick={() => displayWorkDetails(job)}>{job.company}</button>
+                        <button key={job.company} onClick={() => displayWorkDetails(job)} className={activeCompany != job.company ? utilStyles.lightText : styles.fadeInButton}>
+                            {job.company}
+                        </button>
                     ))}
                 </div>
                 <div className={styles.workDescriptionContainer}>
