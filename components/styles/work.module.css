@@ -1,14 +1,16 @@
 .container {
-    background: linear-gradient(231deg, #968DAF 60%, #e7fcffd7 60%);
+    background: linear-gradient(188deg, #968DAF 60%, #e7fcffd7 60%);
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column-reverse;
+    justify-content: space-between;
     color: black;
-    min-height: 38rem;
+    min-height: 32rem;
+    padding: 0 0 2rem 0;
 }
 
 .workHeaderContainer {
     width: 30%;
-    padding: 12rem 4rem 4rem 4rem;
+    margin: 0 0 1rem 3rem;
     text-align: center;
 }
 
@@ -20,17 +22,17 @@
 }
 
 .workDetailsContainer {
-    width: 70%;
-    padding: 4rem 2rem 4rem 7rem;
+    width: 100%;
+    padding: 1rem 1rem 4rem 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .workTitlesContainer {
     display: flex;
     flex-direction: column;
-    padding: 0 0 4rem 0;
-    height: 75%;
+    padding: 1rem 0 0 0;
+    height: 12rem;
     overflow: auto;
 
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -42,15 +44,16 @@
 }
 
 .workTitlesContainer button {
-    padding: 0.5rem 0 0.5rem 0.5rem;
+    padding: 0 0 0 1rem;
     border-left: 5px solid #e7fcffd7;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
     color: #e7fcffd7;
 }
 
 .workDescriptionContainer {
-    width: 50%;
+    width: 75%;
+    margin: 0 0 0 2rem;
 }
 
 .workDescriptionContainer h1 {
@@ -86,25 +89,45 @@
 }
 
 @media only screen and (max-width: 992px) {
-    .workHeaderContainer {
-        padding: 12rem 2rem 2rem 2rem;
+    .container {
+        justify-content: space-around;
+        padding: 1rem 0 2rem 0;
+        min-height: 20rem;
     }
 
     .workDetailsContainer {
-        padding: 2rem 2rem 4rem 3rem;
+        padding: 0 0.5rem 4rem 0.5rem;
+        width: 100%;
+        height: 20rem;
         justify-content: space-between;
     }
 
-    .workHeaderContainer h1 {
-        font-size: 6rem;
-    }
-
     .workTitlesContainer {
-        height: 50%;
+        height: 65%;
+        padding: 0 0 0.5rem 0;
+        margin: 2rem 0 0 0;
     }
 
     .workTitlesContainer button {
         font-size: 1.2rem;
+    }
+
+    .workDescriptionContainer {
+        width: 80%;
+        margin: 0;
+    }
+
+    .workDescriptionContainer h1 {
+        font-size: 1.5rem;
+    }
+
+    .workDescriptionContainer h4 {
+        font-size: 0.9rem;
+        padding: 0;
+    }
+
+    .workDescriptionContainer p {
+        font-size: 0.9rem;
     }
 }
 
@@ -118,12 +141,14 @@
         background: #e7fcffd7;
         width: 100%;
         padding: 0;
+        margin: 0;
     }
 
     .workDetailsContainer {
         display: block;
         background: #968DAF;
         width: 100%;
+        height: auto;
         padding: 0;
         margin: 1rem 0 0 0;
     }
@@ -131,10 +156,15 @@
     .workTitlesContainer {
         text-align: center;
         overflow-x: scroll;
+        justify-content: center;
+        height: auto;
+        margin: 0 2rem 1rem 2rem;
     }
 
     .workDescriptionContainer {
-        text-align: center;
+        text-align: start;
+        padding: 0 2rem 0 2rem;
+        width: 100%;
     }
 
     .workTitlesContainer {
@@ -147,6 +177,6 @@
         border-left: none;
         border-top: 5px solid #e7fcffd7;
         padding: 1rem 0 1rem 0;
-        min-width: 250px;
+        min-width: 150px;
     }
 }

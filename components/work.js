@@ -3,16 +3,6 @@ import utilStyles from '../styles/utils.module.css'
 import { useState } from 'react'
 
 export default function Work() {
-    const [jobTitle, setJobTitle] = useState('Junior Software Developer');
-    const [jobDate, setJobDate] = useState('May 2021 - December 2021')
-    const [jobDesc, setJobDesc] = useState([
-            'Enhance company site using Python and Django by working on tasks assigned through Jira',
-            'Work with tools such as Amazon Workspaces, Pycharm, Github and Bitbucket to maintain and add features to codebase',
-            'Actively troubleshoot bugs and add features to company site such as adding an edit custom email modal allowing users to edit their custom email before sending over to lead',
-            'Implementing responsive UI designs for order form page with Vue.js, HTML, JS and CSS',
-            'Research and create documentation for various automated multi browser testing platforms for team to implement on website'
-    ])
-
     const jobExperience = [
         {   
             company: 'Cloud Peak Law',
@@ -38,6 +28,10 @@ export default function Work() {
 
         }
     ]
+
+    const [jobTitle, setJobTitle] = useState(jobExperience[0].title);
+    const [jobDate, setJobDate] = useState(jobExperience[0].date);
+    const [jobDesc, setJobDesc] = useState(jobExperience[0].description);
 
     function displayWorkDetails(job) {
         let temp = [];
