@@ -13,3 +13,15 @@
 .noBulletPoints {
     list-style-type: none;
 }
+
+.mirrored {
+    transform: scaleX(-1);
+}
+
+.alignTextStart {
+    text-align: start;
+}
+
+.alignTextEnd {
+    text-align: end;
+}
