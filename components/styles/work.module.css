@@ -181,6 +181,10 @@
         margin: 0;
     }
 
+    .workHeaderContainer h1 {
+        font-size: 5rem;
+    }
+
     .workDetailsContainer {
         display: block;
         background: #968DAF;

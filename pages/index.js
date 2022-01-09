@@ -3,6 +3,7 @@ import Layout, { siteTitle } from '../components/layout'
 import Intro from '../components/intro'
 import Skills from '../components/skills'
 import Work from '../components/work'
+import Projects from '../components/projects'
 
 export default function Home() {
   return (
@@ -24,6 +25,11 @@ export default function Home() {
             <div className={`row g-0`}>
                 <div className={`col`}>
                     <Work />
+                </div>
+            </div>
+            <div className={`row g-0`}>
+                <div className={`col`}>
+                    <Projects />
                 </div>
             </div>
         </div>

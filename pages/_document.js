@@ -8,6 +8,7 @@ class MyDocument extends Document {
             <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet"></link>
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+            <script src="https://kit.fontawesome.com/83e7cd2b59.js" crossorigin="anonymous"></script>
         </Head>
         <body>
           <Main />
