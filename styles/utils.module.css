@@ -25,3 +25,7 @@
 .alignTextEnd {
     text-align: end;
 }
+
+.marginBottom {
+    margin: 0 0 2rem 0;
+}

@@ -4,56 +4,90 @@ import utilStyles from '../styles/utils.module.css'
 
 
 export default function Projects() {
-    const projectName = 'Sunpunch';
+    const projects = [
+        {
+            title: 'Sunpunch',
+            technologies: 'React \u00A0\u00A0 NodeJS \u00A0\u00A0 Express \u00A0\u00A0 KnexJS',
+            image: '/images/sunpunch-full.png',
+            details: 'A clock in site built for Sunshine Life & Health Advisors that allows employees to punch in when working from home. Designed and implemented frontend for the login, signup, and dashboard pages.',
+            github: 'https://github.com/nbernardo96/sunpunch'
+        },
+        {
+            title: 'Tony\'s Queue',
+            technologies: 'Python \u00A0\u00A0 Django (Backend) \u00A0\u00A0 React (Frontend)',
+            image: '/images/tonys-queue-full.png',
+            details: 'A site dedicated for clients who want to place an order for a customized Flyer or Business Card. Designed and implemented home, business card form and flyer form pages. Also implemented database tables and connected it to the frontend.',
+            github: 'https://github.com/nbernardo96/queuesite'
+        },
+        {
+            title: 'NoteKeeper',
+            technologies: 'Xcode 11 \u00A0\u00A0 Figma',
+            image: '/images/notekeeper.png',
+            details: 'An iOS app designed to help students keep track of their notes from class lectures by allowing them to store, type, or share with each other. Designed using Figma and implemented with Xcode11.',
+            github: 'https://github.com/nbernardo96/notekeeper-ios-app'
+        },
+        {
+            title: 'Gator Media',
+            technologies: 'MySQL 8.0 \u00A0\u00A0 Node 13.8 \u00A0\u00A0 Javascript \u00A0\u00A0 HTML \u00A0\u00A0 CSS',
+            image: '/images/gator-media-full.png',
+            details: 'An e-commerce platform where San Francisco State students and faculty can purchase/sell digital media for extra income. Designed and implemented frontend of the main and content view pages along with a team of 6.',
+            github: 'https://github.com/nbernardo96/gator-media'
+        }
+    ]
+
     return (
         <div className={styles.container}>
             <div className={styles.projectsHeader}>PROJECTS</div>
 
-            <div className={styles.projectsContainer}>
-                <div className={styles.imageContainer}>
-                    <Image
-                        src="/images/sunpunch-full.png"
-                        className={`${styles.projectImage} img-fluid`}
-                        height={427}
-                        width={800}
-                        alt={projectName}
-                        priority
-                        responsive="true"
-                    />
-                </div>
-                <h1 className={styles.projectTitle}>Sunpunch</h1>
-                <p className={styles.projectTechnologies}>React &nbsp; NodeJS &nbsp; Express &nbsp; KnexJS</p>
-                <i className={`${styles.projectLinks} fab fa-github`}></i>
-                <div className={styles.projectDetailsContainer}>
-                    <h1>Sunpunch</h1>
-                    <p className={styles.projectDetails}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p className={styles.projectTechnologiesInner}>React &nbsp; NodeJS &nbsp; Express &nbsp; KnexJS</p>
-                    <i className={`${styles.projectLinksInner} fab fa-github`}></i>
-                </div>
-            </div>
-
-            <div className={`${styles.projectsContainer} ${utilStyles.mirrored}`}>
-                <div className={`${styles.imageContainer} ${utilStyles.mirrored}`}>
-                    <Image
-                        src="/images/sunpunch-full.png"
-                        className={`${styles.projectImage} img-fluid`}
-                        height={427}
-                        width={800}
-                        alt={projectName}
-                        priority
-                        responsive="true"
-                    />
-                </div>
-                <h1 className={`${styles.projectTitle} ${utilStyles.mirrored}`}>Sunpunch</h1>
-                <p className={`${styles.projectTechnologiesFlipped} ${utilStyles.mirrored}`}>React &nbsp; NodeJS &nbsp; Express &nbsp; KnexJS</p>
-                <i className={`${styles.projectLinksFlipped} ${utilStyles.mirrored} fab fa-github`}></i>
-                <div className={`${styles.projectDetailsContainer} ${utilStyles.mirrored} ${utilStyles.alignTextStart}`}>
-                    <h1>Sunpunch</h1>
-                    <p className={`${styles.projectDetails}`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p className={styles.projectTechnologiesInner}>React &nbsp; NodeJS &nbsp; Express &nbsp; KnexJS</p>
-                    <i className={`${styles.projectLinksInner} fab fa-github`}></i>
-                </div>
-            </div>
+            {projects.map((project, idx) => (
+                idx % 2 == 0 ?
+                    <div key={project.title} className={styles.projectsContainer}>
+                        <div className={styles.imageContainer}>
+                            <Image
+                                src={project.image}
+                                className={`${styles.projectImage} img-fluid`}
+                                height={427}
+                                width={800}
+                                alt={project.title}
+                                priority
+                                responsive="true"
+                            />
+                        </div>
+                        <h1 className={styles.projectTitle}>{project.title}</h1>
+                        <p className={styles.projectTechnologies}>{project.technologies}</p>
+                        <a className={`${styles.projectLinks} fab fa-github`} href={project.github} target="_blank">
+                        </a>
+                        <div className={styles.projectDetailsContainer}>
+                            <h1>{project.title}</h1>
+                            <p className={styles.projectDetails}>{project.details}</p>
+                            <p className={styles.projectTechnologiesInner}>{project.technologies}</p>
+                            <a className={`${styles.projectLinksInner} fab fa-github`} href={project.github} target="_blank"></a>                        
+                        </div>
+                    </div>
+                :
+                    <div key={idx} className={`${styles.projectsContainer} ${utilStyles.mirrored} ${utilStyles.marginBottom}`}>
+                        <div className={`${styles.imageContainerFlipped} ${utilStyles.mirrored}`}>
+                            <Image
+                                src={project.image}
+                                className={`${styles.projectImage} img-fluid`}
+                                height={427}
+                                width={800}
+                                alt={project.title}
+                                priority
+                                responsive="true"
+                            />
+                        </div>
+                        <h1 className={`${styles.projectTitleFlipped} ${utilStyles.mirrored}`}>{project.title}</h1>
+                        <p className={`${styles.projectTechnologiesFlipped} ${utilStyles.mirrored}`}>{project.technologies}</p>
+                        <a className={`${styles.projectLinksFlipped} ${utilStyles.mirrored} fab fa-github`} href={project.github} target="_blank"></a>
+                        <div className={`${styles.projectDetailsContainer} ${utilStyles.mirrored}`}>
+                            <h1>{project.title}</h1>
+                            <p className={`${styles.projectDetails}`}>{project.details}</p>
+                            <p className={styles.projectTechnologiesInner}>{project.technologies}</p>
+                            <a className={`${styles.projectLinksInner} fab fa-github`} href={project.github} target="_blank"></a>
+                        </div>
+                    </div>
+            ))}
         </div>
     )
 }
