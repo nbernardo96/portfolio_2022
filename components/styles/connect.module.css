@@ -1,0 +1,59 @@
+.container {
+    background: #80BBB7;
+    display: grid;
+    grid-template-rows: 1fr 2rem 2rem 4rem;
+    grid-template-columns: repeat(12, 1fr)
+}
+
+.connectTitle {
+    grid-area: 1 / 1 / 1 / 13;
+    text-align: center;
+    padding: 1rem 0 0 0;
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+.emailIcon {
+    text-align: start;
+    border-radius: 1rem;
+    color: #d3ebed;
+    font-size: 2rem;
+    font-weight: bolder;
+    grid-area: 2 / 5 / 2 / 5;
+}
+
+.email {
+    grid-area: 2 / 1 / 2 / 13;
+    text-align: center;
+    align-self: flex-start;
+    font-size: 2rem;
+    opacity: 75%;
+}
+
+.linkedInButton {
+    grid-area: 4 / 5 / 4 / 5;
+    text-align: end;
+    align-self: flex-start;
+    font-size: 2.5rem;
+}
+
+.githubButton {
+    grid-area: 4 / 6 / 4 / 8;
+    text-align: center;
+    align-self: flex-start;
+    font-size: 2.5rem;
+}
+
+.igButton {
+    grid-area: 4 / 8 / 4 / 8;
+    text-align: start;
+    align-self: flex-start;
+    font-size: 2.5rem;
+}
+
+.buttonHover:hover {
+    opacity: 65%;
+    color: #37746f;
+    text-decoration: none;
+    transition: 0.3s;
+}
