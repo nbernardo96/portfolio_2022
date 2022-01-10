@@ -66,10 +66,11 @@
 .projectTitle {
     font-weight: bolder;
     z-index: 2;
-    grid-area: 1 / 11 / 1 / 11;
+    grid-area: 1 / 9 / 1 / 12;
     align-self: flex-end;
     margin: 0 0 1rem 0;
     height: 20%;
+    text-align: end;
 }
 
 .projectTitleFlipped {
@@ -99,10 +100,11 @@
     height: 50%;
     align-self: center;
     font-size: 2rem;
-    margin: 4rem 0 5rem 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.projectLinks:hover {
+.projectLinks a:hover {
     opacity: 65%;
     color: #e3a6ff;
     text-decoration: none;
@@ -115,10 +117,11 @@
     height: 50%;
     align-self: center;
     font-size: 2rem;
-    margin: 4rem 0 5rem 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.projectLinksFlipped:hover {
+.projectLinksFlipped a:hover {
     opacity: 65%;
     color: #e3a6ff;
     text-decoration: none;
@@ -136,7 +139,7 @@
     }
 
     .imageContainer {
-        grid-area: 1 / 2 / 3 / 10;
+        grid-area: 1 / 2 / 3 / 9;
     }
 
     .imageContainerFlipped {
@@ -231,6 +234,11 @@
         display: block;
         font-size: 2rem;
         padding: 1rem 0 1rem 0;
+        display: flex;
+    }
+
+    .projectLinksInner a {
+        margin-right: 1rem;
     }
 
     .projectLinksInner:hover {

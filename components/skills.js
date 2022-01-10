@@ -2,7 +2,7 @@ import styles from './styles/skills.module.css'
 import utilStyles from '../styles/utils.module.css'
 
 export default function Skills() {
-    const skills = ['Javascript', 'Django', 'MySQL', 'Node.js', 'React', 'Python', 'Figma', 'Vue']
+    const skills = ['Javascript', 'Django', 'MySQL', 'Node.js', 'React', 'NextJS', 'Python', 'Figma', 'Vue']
     return (
         <div className={styles.container}>
             <div className={styles.skillsListContainer}>
