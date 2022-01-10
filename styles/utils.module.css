@@ -18,14 +18,10 @@
     transform: scaleX(-1);
 }
 
-.alignTextStart {
-    text-align: start;
-}
-
-.alignTextEnd {
-    text-align: end;
-}
-
 .marginBottom {
     margin: 0 0 2rem 0;
+}
+
+.transitionButton {
+    transition: 0.3s;
 }
