@@ -43,20 +43,34 @@ img {
 
 /* navbar styling */
 #navbarAltBrand {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bolder;
     padding: 0 1rem 0 1rem;
+    align-self: flex-end;
 }
 
 #navbarNavAltMarkup {
     justify-content: flex-end;
 }
 
-#navbarNavAltMarkup a {
-    font-size: 18px;
+#navbarNavAltMarkup button {
+    font-size: 1.2rem;
     padding: 0 1rem 0 1rem;
+    color: white !important;
 }
 
-#navbarNavAltMarkup .currentPage {
-    color: white;
+#navbarNavAltMarkup a {
+    font-size: 1.2rem;
+    padding: 0 1rem 0 1rem;
+    color: white !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbarNavAltMarkup button:hover {
+    opacity: 55%;
+}
+
+#navbarNavAltMarkup a:hover {
+    opacity: 55%;
 }

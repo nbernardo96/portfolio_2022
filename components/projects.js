@@ -50,75 +50,74 @@ export default function Projects() {
     return (
         <div className={styles.container}>
             <div className={styles.projectsHeader}>PROJECTS</div>
-
-            {projects.map((project, idx) => (
-                idx % 2 == 0 ?
-                    <div key={project.title} className={styles.projectsContainer}>
-                        <div className={styles.imageContainer}>
-                            <Image
-                                src={project.image}
-                                className={`${styles.projectImage} img-fluid`}
-                                height={427}
-                                width={800}
-                                alt={project.title}
-                                priority
-                                responsive="true"
-                            />
-                        </div>
-                        <h1 className={styles.projectTitle}>{project.title}</h1>
-                        <p className={styles.projectTechnologies}>{project.technologies}</p>
-                        <div className={`${styles.projectLinks}`}>
-                            {project.figma != '' ? 
-                                ( <a className={`fab fa-figma`} href={project.figma} target="_blank"></a> ) : (<div></div>)
-                            }
-                            <a className={`fab fa-github`} href={project.github} target="_blank"></a>
-                        </div>
-                        <div className={styles.projectDetailsContainer}>
-                            <h1>{project.title}</h1>
-                            <p className={styles.projectDetails}>{project.details}</p>
-                            <p className={styles.projectTechnologiesInner}>{project.technologies}</p>
-                            <div className={`${styles.projectLinksInner}`}>
+                {projects.map((project, idx) => (
+                    idx % 2 == 0 ?
+                        <div key={project.title} className={styles.projectsContainer}>
+                            <div className={styles.imageContainer}>
+                                <Image
+                                    src={project.image}
+                                    className={`${styles.projectImage} img-fluid`}
+                                    height={427}
+                                    width={800}
+                                    alt={project.title}
+                                    priority
+                                    responsive="true"
+                                />
+                            </div>
+                            <h1 className={styles.projectTitle}>{project.title}</h1>
+                            <p className={styles.projectTechnologies}>{project.technologies}</p>
+                            <div className={`${styles.projectLinks}`}>
                                 {project.figma != '' ? 
-                                    ( <a className={`fab fa-figma`} href={project.figma} target="_blank"></a> ) : (<div></div>)
+                                    ( <a aria-hidden aria-hidden className={`fab fa-figma`} href={project.figma} target="_blank"></a> ) : (<div></div>)
                                 }
-                                <a className={`fab fa-github`} href={project.github} target="_blank"></a>
+                                <a aria-hidden className={`fab fa-github`} href={project.github} target="_blank"></a>
+                            </div>
+                            <div className={styles.projectDetailsContainer}>
+                                <h1>{project.title}</h1>
+                                <p className={styles.projectDetails}>{project.details}</p>
+                                <p className={styles.projectTechnologiesInner}>{project.technologies}</p>
+                                <div className={`${styles.projectLinksInner}`}>
+                                    {project.figma != '' ? 
+                                        ( <a aria-hidden className={`fab fa-figma`} href={project.figma} target="_blank"></a> ) : (<div></div>)
+                                    }
+                                    <a aria-hidden className={`fab fa-github`} href={project.github} target="_blank"></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                :
-                    <div key={idx} className={`${styles.projectsContainer} ${utilStyles.mirrored} ${utilStyles.marginBottom}`}>
-                        <div className={`${styles.imageContainerFlipped} ${utilStyles.mirrored}`}>
-                            <Image
-                                src={project.image}
-                                className={`${styles.projectImage} img-fluid`}
-                                height={427}
-                                width={800}
-                                alt={project.title}
-                                priority
-                                responsive="true"
-                            />
-                        </div>
-                        <h1 className={`${styles.projectTitleFlipped} ${utilStyles.mirrored}`}>{project.title}</h1>
-                        <p className={`${styles.projectTechnologiesFlipped} ${utilStyles.mirrored}`}>{project.technologies}</p>
-                        <div className={`${styles.projectLinksFlipped}`}>
-                            {project.figma != '' ? 
-                                ( <a className={`fab fa-figma`} href={project.figma} target="_blank"></a> ) : (<div></div>)
-                            }
-                            <a className={`fab fa-github`} href={project.github} target="_blank"></a>
-                        </div>
-                        <div className={`${styles.projectDetailsContainer} ${utilStyles.mirrored}`}>
-                            <h1>{project.title}</h1>
-                            <p className={`${styles.projectDetails}`}>{project.details}</p>
-                            <p className={styles.projectTechnologiesInner}>{project.technologies}</p>
-                            <div className={`${styles.projectLinksInner}`}>
+                    :
+                        <div key={idx} className={`${styles.projectsContainer} ${utilStyles.mirrored} ${utilStyles.marginBottom}`}>
+                            <div className={`${styles.imageContainerFlipped} ${utilStyles.mirrored}`}>
+                                <Image
+                                    src={project.image}
+                                    className={`${styles.projectImage} img-fluid`}
+                                    height={427}
+                                    width={800}
+                                    alt={project.title}
+                                    priority
+                                    responsive="true"
+                                />
+                            </div>
+                            <h1 className={`${styles.projectTitleFlipped} ${utilStyles.mirrored}`}>{project.title}</h1>
+                            <p className={`${styles.projectTechnologiesFlipped} ${utilStyles.mirrored}`}>{project.technologies}</p>
+                            <div className={`${styles.projectLinksFlipped}`}>
                                 {project.figma != '' ? 
-                                    ( <a className={`fab fa-figma`} href={project.figma} target="_blank"></a> ) : (<div></div>)
+                                    ( <a aria-hidden className={`fab fa-figma`} href={project.figma} target="_blank"></a> ) : (<div></div>)
                                 }
-                                <a className={`fab fa-github`} href={project.github} target="_blank"></a>
+                                <a aria-hidden className={`fab fa-github`} href={project.github} target="_blank"></a>
+                            </div>
+                            <div className={`${styles.projectDetailsContainer} ${utilStyles.mirrored}`}>
+                                <h1>{project.title}</h1>
+                                <p className={`${styles.projectDetails}`}>{project.details}</p>
+                                <p className={styles.projectTechnologiesInner}>{project.technologies}</p>
+                                <div className={`${styles.projectLinksInner}`}>
+                                    {project.figma != '' ? 
+                                        ( <a aria-hidden className={`fab fa-figma`} href={project.figma} target="_blank"></a> ) : (<div></div>)
+                                    }
+                                    <a aria-hidden className={`fab fa-github`} href={project.github} target="_blank"></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-            ))}
+                ))}
         </div>
     )
 }
