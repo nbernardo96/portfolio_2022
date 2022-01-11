@@ -17,7 +17,7 @@ export default function Home() {
         if (section === 'projectsRef') {
             projectsRef.current.scrollIntoView({behavior: 'smooth'})
         } else if (section === 'experienceRef') {
-            experienceRef.current.scrollIntoView({behavior: 'smooth', block: 'center'})
+            experienceRef.current.scrollIntoView({behavior: 'smooth'})
         } else if (section === 'connectRef') {
             connectRef.current.scrollIntoView({behavior: 'smooth'})
         }
