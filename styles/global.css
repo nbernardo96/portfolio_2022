@@ -7,6 +7,14 @@ body {
   font-size: 18px;
   background: #689592;
   color: white;
+  
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
 }
 
 * {
@@ -22,6 +30,11 @@ a:hover {
   text-decoration: underline;
 }
 
+button {
+  all: unset;
+  cursor: pointer;
+}
+
 img {
   height: 250px;
   width: 250px;
@@ -30,20 +43,34 @@ img {
 
 /* navbar styling */
 #navbarAltBrand {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bolder;
     padding: 0 1rem 0 1rem;
+    align-self: flex-end;
 }
 
 #navbarNavAltMarkup {
     justify-content: flex-end;
 }
 
-#navbarNavAltMarkup a {
-    font-size: 18px;
+#navbarNavAltMarkup button {
+    font-size: 1.2rem;
     padding: 0 1rem 0 1rem;
+    color: white !important;
 }
 
-#navbarNavAltMarkup .currentPage {
-    color: white;
+#navbarNavAltMarkup a {
+    font-size: 1.2rem;
+    padding: 0 1rem 0 1rem;
+    color: white !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbarNavAltMarkup button:hover {
+    opacity: 55%;
+}
+
+#navbarNavAltMarkup a:hover {
+    opacity: 55%;
 }

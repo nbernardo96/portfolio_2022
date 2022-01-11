@@ -15,14 +15,15 @@ export default function Intro() {
                 width={400}
                 alt={name}
                 priority
-                responsive
+                responsive="true"
                 />
             </div>
             <div className={styles.textContainer}>
                 <p className={styles.introText}>
-                Hi, my name is Nicole Bernardo. I’m a Software Engineer with a passion 
-                for building and maintaining sites both frontend and backend, and a knack 
-                for creating things outside the world of software engineering.
+                Hi! I'm Nicole Bernardo. I’m a Software Engineer with experience creating and maintaining responsive, 
+                minimal, user-friendly sites in order to provide users with a seamless way to interact with their clients, 
+                products, orders, and more. When I'm not coding, you can find me playing the latest games from Nintendo, 
+                doodling on my iPad, going on food adventures, or catching up on my endless queue of shows/movies! 
                 </p>
             </div>
         </div>

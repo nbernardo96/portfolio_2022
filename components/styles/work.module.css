@@ -1,0 +1,228 @@
+.container {
+    background: linear-gradient(188deg, #968DAF 60%, #e7fcffd7 60%);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    color: black;
+    min-height: 32rem;
+    padding: 0 0 2rem 0;
+}
+
+.workHeaderContainer {
+    width: 30%;
+    margin: 0 0 1rem 3rem;
+    text-align: center;
+}
+
+.workHeaderContainer h1 {
+    color: #968DAF;
+    font-size: 7rem;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.workDetailsContainer {
+    width: 100%;
+    padding: 1rem 1rem 4rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.workTitlesContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+    height: 12rem;
+    overflow: auto;
+
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+}
+
+.workTitlesContainer::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.workTitlesContainer button {
+    padding: 0 0 0 1rem;
+    border-left: 5px solid #e7fcffd7;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #e7fcffd7;
+}
+
+.fadeInButton {
+    -webkit-animation: fadeIn 0.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeIn 0.5s; /* Firefox < 16 */
+     -ms-animation: fadeIn 0.5s; /* Internet Explorer */
+      -o-animation: fadeIn 0.5s; /* Opera < 12.1 */
+         animation: fadeIn 0.5s;
+}
+
+.workDescriptionContainer {
+    width: 75%;
+    margin: 0 0 0 2rem;
+}
+
+.workDescriptionContainer h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #e7fcffd7;
+    margin-left: 28px;
+}
+
+.workDescriptionContainer h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e7fcffd7;
+    padding: 0 0 1rem 0;
+    margin-left: 28px;
+}
+
+.workDescriptionContainer p {
+    opacity: 80%;
+    color: #e7fcffd7;
+    margin: 0 0 0 10px;
+    font-weight: bolder;
+}
+
+.jobExperienceContainer {
+    display: flex;
+}
+
+.arrowIcon {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: rgb(185, 255, 255);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        justify-content: space-around;
+        padding: 1rem 0 2rem 0;
+        min-height: 20rem;
+    }
+
+    .workDetailsContainer {
+        padding: 0 0.5rem 4rem 0.5rem;
+        width: 100%;
+        height: 20rem;
+        justify-content: space-between;
+    }
+
+    .workTitlesContainer {
+        height: 65%;
+        padding: 0 0 0.5rem 0;
+        margin: 2rem 0 0 0;
+    }
+
+    .workTitlesContainer button {
+        font-size: 1.2rem;
+    }
+
+    .workDescriptionContainer {
+        width: 80%;
+        margin: 0;
+    }
+
+    .workDescriptionContainer h1 {
+        font-size: 2rem;
+    }
+
+    .workDescriptionContainer h4 {
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    .workDescriptionContainer p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        background: #968DAF;
+        display: block;
+    }
+
+    .workHeaderContainer {
+        background: #e7fcffd7;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .workHeaderContainer h1 {
+        font-size: 5rem;
+    }
+
+    .workDetailsContainer {
+        display: block;
+        background: #968DAF;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 1rem 0 0 0;
+    }
+
+    .workTitlesContainer {
+        text-align: center;
+        overflow-x: scroll;
+        justify-content: center;
+        height: auto;
+        margin: 0 2rem 1rem 2rem;
+    }
+
+    .workDescriptionContainer {
+        text-align: start;
+        padding: 0 2rem 0 2rem;
+        width: 100%;
+    }
+
+    .workDescriptionContainer p {
+        font-size: 1.5rem;
+    }
+
+    .workTitlesContainer {
+        padding: 0;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .workTitlesContainer button {
+        border-left: none;
+        border-top: 5px solid #e7fcffd7;
+        padding: 1rem 0 1rem 0;
+        min-width: 150px;
+    }
+}
