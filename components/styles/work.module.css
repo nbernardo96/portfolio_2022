@@ -164,7 +164,7 @@
     }
 
     .workDescriptionContainer p {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -207,6 +207,10 @@
         text-align: start;
         padding: 0 2rem 0 2rem;
         width: 100%;
+    }
+
+    .workDescriptionContainer p {
+        font-size: 1.5rem;
     }
 
     .workTitlesContainer {

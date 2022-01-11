@@ -22,7 +22,7 @@ export default function Intro() {
                 <p className={styles.introText}>
                 Hi! I'm Nicole Bernardo. I’m a Software Engineer with experience creating and maintaining responsive, 
                 minimal, user-friendly sites in order to provide users with a seamless way to interact with their clients, 
-                products, orders, and more. When I'm not coding, you can find me playing the latest Nintendo games, 
+                products, orders, and more. When I'm not coding, you can find me playing the latest games from Nintendo, 
                 doodling on my iPad, going on food adventures, or catching up on my endless queue of shows/movies! 
                 </p>
             </div>
